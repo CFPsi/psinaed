@@ -1,0 +1,758 @@
+/*
+Theme Name: Psicologia na Educação
+Theme URI: https://psinaed.cfp.org.br/
+Description: Site para a comissão de Psicologia na educação do CFP
+Author: Marcos Nobre | Conselho Federal de Psicologia 2015
+Version: 1.0
+*/
+
+@charset "utf-8";
+/* CSS Document */
+a {
+	text-decoration:none;
+	outline:none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#333333;
+}
+
+/*Slide*/
+	.bg-slide {
+		width:100%;
+	}
+	.slide-info {
+		z-index: 10;
+		position: absolute;
+		top: 35%;
+		text-align: center;
+	}
+	.titulo-slide {
+		font-size: 48px;
+		font-weight:900;
+		color:white;
+	}
+	.descricao-slide {
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:20px;
+		color: white;
+		margin-top: 5px;
+	}
+	.bt-slide-saiba-mais {
+		font-family: 'Roboto', sans-serif;
+		font-size: 24px;
+		font-weight:700;
+		display:block;
+		width:190px;
+		padding: 6px 0px;
+		background-color:white;
+		text-align:center;
+		color:#cf9016;
+		margin: 0 auto;
+		margin-top: 18px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+	}
+	
+	/*Seletores*/
+	.bx-pager {
+		position: absolute;
+		top: 30%;
+		z-index: 9999;
+		left: 10%;
+	}
+	
+	.bx-pager-link {
+		background-color: rgb(192, 191, 222);
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 15px;
+		text-indent: -9999px;
+		width: 20px;
+		height: 20px;
+		display:block;
+		margin-bottom:20px;
+		outline:none;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+		background-color: #cf9016;
+	}
+
+	
+/*Logo e menu*/
+	.logo, .cont-menu-home {
+		z-index: 9999;
+		position: absolute;
+		margin-top: 53px;
+	}
+	.menu {
+		float:right;
+	}
+	.menu li {
+		float:left;
+	}
+	.menu li a {
+		font-family: 'Roboto', sans-serif;
+		font-weight:400;
+		color: white;
+		margin-left:14px;
+	}
+	.menu li a:hover {
+		color:#363664 !important;
+		background-color: rgba(255,255,255, 0.9);
+	}
+	.current-menu-item a{
+		color:#c0c0e4 !important;
+	}
+	#menu-educacao-infantil .current-menu-item a,
+	#menu-educacao .current-menu-item a,  .current-cat a {
+		color:#28284B !important;
+		font-weight:bold;
+	}
+	
+	.current-cat .children li a{
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-style:italic;
+		font-size:16px;
+		color:#6c6c8d !important;;
+		line-height: 25px;
+		font-weight:normal;
+	}
+/*Sub-menu*/
+	.sub-menu {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+		display:none;
+	}	
+	.sub-menu li{
+		clear:both;
+		width: 170px;
+	}
+	.sub-menu li a{
+		display: block;
+		padding-right: 30px;
+		padding-left: 14px;
+		margin: 0px;
+		padding: 10px 30px 10px 14px;
+	}
+	.menu-item-has-children:hover .sub-menu {
+		display:block;
+	}
+	
+	/*Sub-sub-menu*/
+	.sub-menu li ul {
+		display:none !important;
+	}
+	.sub-menu li:hover ul {
+		display:block !important;
+	}
+	.sub-menu li ul {
+		width: 170px;
+		top: 0px;
+		left: 170px;
+		background-color: rgba(0, 0, 0, 0.8);
+	}	
+	
+/*Notícias da home*/
+	#cont-noticias {
+		margin-top:45px;
+	}
+	#cont-noticias h3 {
+		font-size:14px;
+		font-weight:700;
+		color:#363664;
+		text-transform:uppercase;
+	}
+	.home-noticia {
+		border-top:2px solid #c0bfde;
+		padding-top:40px;
+		margin-top:15px;
+		margin-bottom:40px;
+	}
+	
+	.home-noticia h2 a {
+		font-size:24px;
+		line-height:29px;
+		color:#363664;
+		font-weight:700;
+		margin-bottom:10px;
+		display:block;
+	}
+	.home-noticia p {
+		line-height:27px;
+		font-size:16px;
+		margin-bottom:15px;
+		display:block;
+	}
+	.noticias-link {
+		font-family: 'Roboto', sans-serif;
+		font-size:16px;
+		color:#9999c8;
+	}
+	.maisnoticias {
+		text-align:right;
+		font-family: 'Roboto', sans-serif;
+		font-size:12px;
+		text-transform:uppercase;
+		margin-bottom:60px;
+		display:block;
+	}
+	.link-video, .link-publicacoes, .link-legislacao, .link-links {
+		display:block;
+		padding: 17px 0px 17px 21px;
+		width:580px;
+		color:#363664;
+		font-family: 'Roboto', sans-serif;
+		font-size:22px;
+		font-weight:700;
+		margin-bottom:7px;
+		background-color:white;
+		border: 1px solid #c0bfde;
+	}
+	.link-video {
+		border-left: 20px solid #363664;
+	}
+	.link-publicacoes {
+		border-left: 20px solid #d0a41f;
+	}
+	.link-legislacao {
+		border-left: 20px solid #9999c8;
+	}
+	.link-links {
+		border-left: 20px solid #4086A0;
+	}
+
+	.link-video:hover {
+		background-color:#363664;
+		color:white;
+		border-left: 20px solid #4a4a74;
+	}
+	.link-publicacoes:hover {
+		background-color:#d0a41f;
+		color:white;
+		border-left: 20px solid #d5ad36;
+	}
+	.link-legislacao:hover {
+		background-color:#9999c8;
+		color:white;
+		border:#9999c8;
+		border-left: 20px solid #a3a3ce;
+	}
+	.link-links:hover {
+		background-color:#4086A0;
+		color:white;
+		border:#9999c8;
+		border-left: 20px solid #a3a3ce;
+	}
+
+	
+/*Banner na home*/	
+	#banner-home {
+		margin-bottom:86px;
+	}
+
+/*Footer - Mapa e sobre*/
+	.cont-footer-1 {
+		background-color:#28284b;
+	}
+	#cont-map-sobre {
+		padding: 65px 0px;
+	}
+	.titulos-footer {
+		text-transform:uppercase;
+		font-size:16px;
+		font-weight:900;
+		color:#d0a41f;
+		margin-bottom:18px;
+	}
+	.mapa-site-colunas {
+		-webkit-column-count: 3; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+		-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+		-moz-column-gap: 40px; /* Firefox */
+		column-gap: 40px;
+	}
+	.mapa-site-colunas li a, .mapa-site-colunas .children li a {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-style:italic;
+		font-size:14px;
+		color:white !important;
+		line-height: 25px;
+		margin-left:0px !important;
+	}
+	.mapa-site-colunas li a:hover {
+		color:#d0a41f !important;
+	}
+	.mapa-site-colunas .children {
+		display:none;
+	}
+	.footer-sobre-texto {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size:15px;
+		color:white;
+		line-height: 25px;
+		text-align: justify;
+	}
+	
+	
+/*Footer - Logo e redes*/
+	.cont-footer-2 {
+		background-color:#53536f;
+	}
+	#cont-logo-redes {
+		padding: 20px 0px;
+	}
+	#creditos {
+		font-family: 'Roboto', sans-serif;
+		font-weight:400;
+		color: white;
+		font-size:13px;
+		margin-left:25px;
+	}
+	
+	
+/*PÁGINAS INTERNAS*/
+
+/*Menu interno*/
+	#cont-menu-interno{
+		background-image:url(https://psinaed.cfp.org.br/wp-content/themes/psinaed/img/bg-menu-conteudo.jpg);
+		height:114px;
+		display:block;
+	}
+/*Menu lateral específico*/
+	#menu-conteudo {
+		padding:45px 0px 80px;
+	}
+	.menu-especifico {
+		width:195px;
+		border-right: 2px #c4c4e6 solid;
+	}
+	.menu-especifico h3 {
+		font-weight:900;
+		color: #363664;
+		font-size:16px;
+		text-transform:uppercase;
+		margin-bottom:10px;
+	}
+	.menu-especifico ul li a {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-style:italic;
+		font-size:16px;
+		color:#6c6c8d;
+		line-height: 25px;
+	}
+
+
+/*Conteúdo de páginas internas*/
+	.titulo-noticia {
+		font-weight:900;
+		color: #363664;
+		font-size:30px;
+		margin-bottom:10px;
+		line-height: 36px;
+	}
+	.cont-conteudo p {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		line-height: 27px;
+		margin-bottom:30px;
+	}
+	.cont-conteudo ul {
+		margin-bottom:40px;
+	}
+	.cont-conteudo ul li {
+		font-family: Georgia,"Times New Roman",Times,serif;
+		font-size: 16px;
+		line-height: 27px;
+		margin-bottom: 10px;
+		text-indent: 0px;
+		list-style: outside none square;
+		margin-left: 50px;
+		color: #333;
+	}
+	
+/*Lista de notícias*/	
+	.todas-noticias-arquivo {
+		font-weight:900;
+		color: #363664;
+		font-size:16px;
+		text-transform:uppercase;
+		margin-bottom:25px;
+	}
+	.categoria-arquivo {
+		font-weight:400;
+		color: #c0bfde;
+		font-style:italic;
+		font-size:14px;
+		padding-bottom:10px;
+		border-bottom: 1px solid #c0bfde;
+	}
+	.titulo-arquivo {
+		margin-top:17px;
+		font-weight:900;
+		font-size:24px;
+		margin-bottom:5px;
+	}
+	.titulo-arquivo a{
+		color: #363664;
+	}
+	.resumo-arquivo {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		line-height: 27px;
+		margin-bottom:30px;
+	}
+	
+/* Publicações */
+	.publicacao {
+		background-color:#efeff8;
+		padding:40px 30px;
+		margin-bottom:10px;
+		position:relative;
+	}
+	.publicacao:hover {
+		background-color:#e6e6f4;
+	}
+	.publicacao h1 {
+		font-family: 'Roboto', sans-serif;
+		font-weight:700;
+		color: #363664;
+		font-size:16px;
+		text-transform:uppercase;
+	}
+	.publicacao h2 {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		line-height: 27px;
+		font-style:italic;
+		font-weight:normal;
+		color:#333333;
+	}
+	.publicacao h3 {
+		color:#9999c8;
+		font-family: 'Roboto', sans-serif;
+		font-style:italic;
+		font-size:14px;
+		font-weight:normal;
+	}
+	.bt-acesse {
+		display:block;
+		padding:6px 5px 6px 6px;
+		background-color:#363664;
+		color:white;
+		width:90px;
+		text-align:center;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		font-family: 'Roboto', sans-serif;
+		font-style:italic;
+		font-size:14px;
+		float:right;
+		position:relative;
+		bottom:15px;
+	}
+	.cat-item-25, .cat-item-40, .cat-item-41 {
+		margin-bottom:20px;
+	}
+
+	.cat-item-25 a, .cat-item-40 a, .cat-item-41 a {
+		font-family: Georgia,"Times New Roman",Times,serif;
+		font-style: italic;
+		font-size: 16px;
+		color: #28284B !important;
+		font-weight: bold;
+		line-height: 25px;
+	}
+	.children li a {
+		font-family: Georgia,"Times New Roman",Times,serif;
+		font-style: italic;
+		font-size: 16px;
+		color: #6C6C8D !important;
+		line-height: 25px;
+		font-weight: normal;
+	}
+	.publicacao-do-cfp {
+		position: absolute;
+		top: 0px;
+		right: 30px;
+	}
+	
+/*Vídeos*/
+	.video-destaque {
+		margin-bottom:50px;
+	}
+	.video-destaque h2 {
+		font-family: 'Roboto', sans-serif;
+		font-size:18px;
+		font-weight:normal;
+		margin-top:10px;
+	}
+	.video {
+		width: 218px;
+		margin-right: 15px;
+		margin-bottom:40px;
+		float: left
+	}
+	.video h2 {
+		font-family: 'Roboto', sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		margin-top:10px;
+	}
+	
+	
+	
+/*Mapa de Concursos*/		
+	.cont_mapa {
+		position:relative;
+	}/*Container apenas do mapa*/
+	.txt-mapa p {
+		line-height: 1.4em;
+		margin-bottom: 1.4em;
+	}
+	
+	#img_mapa {text-align:center; display:block;}
+	
+	/*Nome dos estado*/
+	#cont_nome_estados {
+		display:block;
+		position:absolute;
+		top: -13px;
+		left: -25px;
+		z-index:1;
+		text-align:center;
+	}
+	#cont_nome_estados p{
+		display:block;
+		position:absolute;
+		z-index:1;
+		font-size:12px;
+		cursor:pointer;
+		padding:5px 0 0 0;
+		
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;
+		
+		color:#609;
+		background-color:#fff;
+		height:20px;
+		width:25px;
+		font-family: "Roboto",sans-serif;
+	}
+		#txt_am {
+			top:130px;
+			left:130px;
+		}
+		#txt_ac {
+			top:190px;
+			left:60px;
+		}
+		#txt_pa {
+			top:130px;
+			left:285px;
+		}
+		#txt_rr {
+			top:45px;
+			left:178px;
+		}
+		#txt_ro {
+			top:210px;
+			left:150px;
+		}
+		#txt_ap {
+	top:50px;
+	left:298px;
+		}
+		#txt_to {
+			top:200px;
+			left:345px;
+		}
+		/*Centro-Oeste*/
+		#txt_mt {
+			top:240px;
+			left:250px;
+		}
+		#txt_ms {
+			top:320px;
+			left:260px;
+		}
+		#txt_go {
+			top:280px;
+			left:315px;
+		}
+		#txt_df {
+	top:272px;
+	left:531px;
+		}
+		
+		/*Sudeste*/
+		#txt_sp {
+			top:350px;
+			left:338px;
+		}
+		#txt_mg {
+			top:310px;
+			left:380px;
+		}
+		#txt_rj {
+	top:358px;
+	left:491px;
+		}
+		#txt_es {
+	top:326px;
+	left:522px;
+		}
+
+		/*Sul*/
+		#txt_pr {
+			top:380px;
+			left:300px;
+		}
+		#txt_sc {
+			top:420px;
+			left:320px;
+		}
+		#txt_rs {
+			top:445px;
+			left:280px;
+		}
+
+		/*nordeste*/
+		#txt_ba {
+			top:225px;
+			left:420px;
+		}
+		#txt_pi {
+			top:170px;
+			left:420px;
+		}
+		#txt_ma {
+			top:140px;
+			left:380px;
+		}
+		#txt_ce {
+			top:135px;
+			left:455px;
+		}
+		#txt_rn {
+	top:121px;
+	left:557px;
+		}
+		#txt_pb {
+	top:145px;
+	left:589px;
+		}
+		#txt_pe {
+	top:171px;
+	left:591px;
+		}
+		#txt_al {
+	top:193px;
+	left:569px;
+		}
+		#txt_se {
+	top:222px;
+	left:559px;
+		}
+		
+/*Lista de concursos pelo Brasil*/
+	.concurso {
+		background-color:#efeff8;
+		padding:30px;
+		margin-bottom:10px;
+		display:inline-block;
+	}
+	.concurso:hover {
+		background-color:#e6e6f4;
+	}
+	.concurso h1 {
+		font-family: 'Roboto', sans-serif;
+		font-weight:700;
+		color: #363664;
+		font-size:16px;
+		text-transform:uppercase;
+	}
+	.concurso h2 {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		line-height: 27px;
+		font-style:italic;
+		font-weight:normal;
+		color:#333333;
+	}
+	.concurso h3 {
+		color:#9999c8;
+		font-family: 'Roboto', sans-serif;
+		font-style:italic;
+		font-size:14px;
+		font-weight:normal;
+	}
+	.bt-acesse {
+		display:block;
+		padding:6px 5px 6px 6px;
+		background-color:#363664;
+		color:white;
+		width:90px;
+		text-align:center;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		font-family: 'Roboto', sans-serif;
+		font-style:italic;
+		font-size:14px;
+		float:right;
+		position:relative;
+		bottom:15px;
+	}
+		
+	.txt-estados-concursos{
+		color:#363664;
+		font-size:24px;
+		display:none;
+	}
+	
+	#voltar-topo{
+		font-family: 'Roboto', sans-serif;
+		text-align:right;
+		font-size: 1.3em;
+	}
+	
+	#voltar-topo span{
+		font-size:20px;
+	}
+	
+	#voltar-topo a{
+		color:#363664;
+	}
+	
+	.info-concurso-1 {
+		width:300px;
+		display:inline;
+		float:left;
+	}
+	.info-concurso-2 {
+		width: 565px;
+		display: inline;
+		float: left;
+		margin-left: 15px;
+	}
+	
+	.info-concurso-tipo {
+		color:#9999c8;
+		font-family: 'Roboto', sans-serif;
+		font-size:14px;
+		font-weight:normal;
+	}
+	.concurso p {
+		line-height: 1.5em;
+	}
+	
+/**/
